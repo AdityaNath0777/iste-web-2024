@@ -10,7 +10,7 @@ export interface Achievement extends Navigation {
   imgSrc: string;
 };
 
-export interface Talk extends Omit<Achievement, "description"> {
+export interface Talk extends Achievement {
   date: string;
   speaker: string;
 };
