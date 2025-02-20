@@ -10,12 +10,8 @@ export const NAVIGATION: Navigation[] = [
     href: "/team",
   },
   {
-    title: "Speakers",
-    href: "/speakers",
-  },
-  {
-    title: "Collaboration",
-    href: "/collaboration",
+    title: "Events",
+    href: "/events",
   },
   {
     title: "About",
