@@ -257,7 +257,7 @@ export const TEAMS: TeamsTypes = {
     {
       id: "2022003",
       imageSrc: "/assets/teams/2024_2025/Karan.jpg",
-      name: "Jasmine Chhabra",
+      name: "Karan Jajoria",
       designation: "Content Creation Head",
       description:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
@@ -279,7 +279,7 @@ export const TEAMS: TeamsTypes = {
     {
       id: "2022004",
       imageSrc: "/assets/teams/2024_2025/Atharv.jpg",
-      name: "Atharv",
+      name: "Atharv Dhingra",
       designation: "Softech Head",
       description:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",

@@ -55,6 +55,13 @@ export interface Member {
   }[];
 }
 
+export interface EventProps {
+  name: string;
+  date: string;
+  description: string[];
+  imageList: string[];
+}
+
 export interface Feature {
   title: string;
   imgSrc: string;
