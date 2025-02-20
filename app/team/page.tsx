@@ -10,7 +10,7 @@ export default async function page() {
             Team 2024-2025
           </h1>
 
-          <p className="max-w-2xl text-center  text-base font-medium lg:text-lg">
+          <p className="max-w-2xl mx-auto text-center  text-base font-medium lg:text-lg">
             Meet the dedicated BVP-ISTE team leading the charge in 2024-25.
           </p>
         </div>
