@@ -1,3 +1,5 @@
+import { EventProps } from "@/types";
+
 interface events {
   currentTenure: EventProps[];
   allEvents: EventProps[];
