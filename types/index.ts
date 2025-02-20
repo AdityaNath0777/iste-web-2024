@@ -43,10 +43,28 @@ export interface Speaker {
   }[];
 }
 
+export interface Member {
+  id: string;
+  imageSrc: string;
+  name: string;
+  designation: string;
+  description: string;
+  socials: {
+    href: string;
+    platform: string;
+  }[];
+}
+
 export interface Feature {
   title: string;
   imgSrc: string;
   description: string;
+}
+
+export interface TeamDetails {
+  facultyMentor: Speaker[];
+  core: Speaker[];
+  heads: Speaker[];
 }
 
 export interface SpeakersDetails {
