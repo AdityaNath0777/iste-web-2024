@@ -6,7 +6,7 @@ export function Logo() {
   return (
     <h1>
       <Link href="/">
-        <span className="sr-only">JSLovers</span>
+        <span className="sr-only">BVP-ISTE</span>
         <Icons.logo />
       </Link>
     </h1>

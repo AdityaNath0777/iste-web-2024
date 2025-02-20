@@ -4,7 +4,7 @@ import Accordion from "@/components/Accordion";
 import { CarouselSection } from "@/components/CarouselSection";
 import { ImageDoubleFrame } from "@/components/ImageDoubleFrame";
 import SectionHeader from "@/components/SectionHeader";
-import SpeakerCard from "@/components/Cards/SpeakerCard";
+import SpeakerCard from "@/components/Cards/MemberCard";
 import { Button } from "@/components/ui/button";
 import { CarouselItem } from "@/components/ui/carousel";
 import { ABOUT } from "@/config/about";
@@ -59,7 +59,7 @@ export default async function page() {
           <section>
             <div className="flex w-full gap-7 py-5 md:gap-x-4 md:gap-y-20 lg:grid lg:grid-cols-3">
               {ABOUT.team.members.map((speakerProps) => (
-                <SpeakerCard key={speakerProps.id} speaker={speakerProps} />
+                <SpeakerCard key={speakerProps.id} member={speakerProps} />
               ))}
             </div>
           </section>

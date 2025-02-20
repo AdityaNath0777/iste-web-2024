@@ -2,7 +2,7 @@ import Image from "next/image";
 import { buttonVariants } from "@/components/Button";
 import { cn } from "@/lib/utils";
 import { COLLABRATIONS } from "@/config/collaboration";
-import SpeakerCard from "@/components/Cards/SpeakerCard";
+import SpeakerCard from "@/components/Cards/MemberCard";
 
 export default async function page() {
   return (
@@ -49,7 +49,7 @@ export default async function page() {
       <section className="container py-16 text-center md:text-left">
         <div className="flex max-w-full snap-x gap-7 overflow-x-auto py-5 md:gap-x-4 md:gap-y-20 lg:grid lg:grid-cols-3 xl:grid-cols-4">
           {COLLABRATIONS.Speakers.map((speakerProps) => (
-            <SpeakerCard key={speakerProps.id} speaker={speakerProps} />
+            <SpeakerCard key={speakerProps.id} member={speakerProps} />
           ))}
         </div>
       </section>

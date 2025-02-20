@@ -7,8 +7,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 const workSans = Work_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
-  title: "JSLovers",
-  description: "JSLovers - a community for the developers",
+  title: "BVP-ISTE",
+  description:
+    "BVP-ISTE: BVP - Indian Society for Technical Education. Since its founding in 2011 at Bharati Vidyapeeth's College of Engineering, the BVP ISTE Student Chapter has developed into a vibrant hub where creative innovation and technical brilliance thrive together. As our campus's premier chapter of the Indian Society for Technical Education, we've established an environment that uses hands-on education to turn ambitious students into professionals prepared for the workforce.",
 };
 
 export default function RootLayout({

@@ -6,12 +6,8 @@ export const NAVIGATION: Navigation[] = [
     href: "/",
   },
   {
-    title: "Meetups",
-    href: "/meetups",
-  },
-  {
-    title: "Jobs",
-    href: "/jobs",
+    title: "Team",
+    href: "/team",
   },
   {
     title: "Speakers",

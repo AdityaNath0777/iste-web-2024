@@ -14,7 +14,7 @@ export const ImageDoubleFrame = ({
           <div className="absolute right-0 top-0 h-3 outline outline-[6px] outline-white" />
           <div className="absolute bottom-0 left-0 w-3 outline outline-[6px] outline-white" />
 
-          <div className="flex flex-col items-center justify-center rounded-[10px] border-[5px] border-solid border-black p-8">
+          <div className="flex flex-col items-center justify-center rounded-[10px] border-[5px] border-solid border-black p-4">
             {children}
           </div>
         </div>
