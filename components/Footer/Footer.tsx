@@ -22,7 +22,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
                 <ul className="mt-4 space-y-4">
                   {FOOTER.QuickLinks.map((item) => (
                     <li key={item.title}>
-                      <Link className="text-gray-500 hover:underline" href={item.href || ""}>{item.title}</Link>
+                      <Link className="text-gray-500 hover:underline" href={"/"}>{item.title}</Link>
                     </li>
                   ))}
                 </ul>
@@ -32,7 +32,7 @@ export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
                 <ul className="mt-4 space-y-4">
                   {FOOTER.FollowUs.map((item) => (
                     <li key={item.title}>
-                      <Link className="text-gray-500 hover:underline" href={item.href || ""}>{item.title}</Link>
+                      <Link className="text-gray-500 hover:underline" href={"/"}>{item.title}</Link>
                     </li>
                   ))}
                 </ul>

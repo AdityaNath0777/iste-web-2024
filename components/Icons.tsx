@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Icons = {
   logo: () => (
     <div className="mx-4 w-20 h-20">
-    <Image src="/assets/logo/bvpiste_extended.png" className="w-full h-full rounded-xl" loading="lazy" alt="BVP-ISTE" />
+    <Image src="/assets/logo/bvpiste_extended.png" width={50} height={50} className="w-full h-full rounded-xl" loading="lazy" alt="BVP-ISTE" />
     </div>
   ),
   razorpay: () => (
