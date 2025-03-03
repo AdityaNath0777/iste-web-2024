@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ImageDoubleFrame } from "../ImageDoubleFrame";
-import { EventProps } from "@/config/events";
+import { EventProps } from "@/types";
 import { CarouselSection } from "../CarouselSection";
 import { CarouselItem } from "../ui/carousel";
 
