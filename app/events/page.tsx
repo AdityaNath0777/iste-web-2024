@@ -1,5 +1,6 @@
 import EventCard from "@/components/Cards/EventCard";
 import { EVENTS } from "@/config/events";
+import { EventProps } from "@/types";
 
 export default function page() {
   return (
@@ -37,7 +38,7 @@ export default function page() {
 
       <section className="container py-16 text-center md:text-left">
         <div className="flex flex-col items-center justify-center gap-10">
-          {EVENTS.allEvents.tenure2023_2024.map((event, index) => (
+          {EVENTS.allEvents.tenure2023_2024.map((event: EventProps, index: number) => (
             <EventCard event={event} key={`event-${index + 1}`} />
           ))}
         </div>
