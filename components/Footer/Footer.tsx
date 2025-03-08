@@ -2,57 +2,48 @@ import Link from "next/link";
 import { Icons } from "../Icons";
 import { FOOTER } from "@/config/footer";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import contact from "../../public/assets/contact.png";
+import instgrm from "../../public/assets/instgrm.png";
+import whtspp from "../../public/assets/whtspp.png";
+import lnkdin from "../../public/assets/lnkdin.png";
+import logo from "../../public/assets/logo/logo.png";
 
 export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
-    <footer className={cn(className)}>
-      <h5 className="sr-only">Footer</h5>
-      <div className="container px-6 pt-2 sm:pt-8 lg:px-8 lg:pb-16">
-        <section className="lg:grid lg:grid-cols-3 lg:gap-8">
-          <section className="space-y-4">
-            <Icons.logo />
-            <p className="text-normal leading-6">
-              Community for developers by developers.
-            </p>
-          </section>
-          <section className="mt-6 grid grid-cols-1 gap-8 lg:col-span-2 lg:mt-0">
-            <div className="grid grid-cols-2 md:grid-cols-3 md:space-y-0">
-              <section className="lg:text-center">
-                <h3 className="text-lg font-medium leading-6">Quick Links</h3>
-                <ul className="mt-4 space-y-4">
-                  {FOOTER.QuickLinks.map((item) => (
-                    <li key={item.title}>
-                      <Link className="text-gray-500 hover:underline" href={item.href || ""}>{item.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-              <section className="lg:text-center">
-                <h3 className="text-lg font-medium leading-6">Follow Us</h3>
-                <ul className="mt-4 space-y-4">
-                  {FOOTER.FollowUs.map((item) => (
-                    <li key={item.title}>
-                      <Link className="text-gray-500 hover:underline" href={item.href || ""}>{item.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-              <section className="mt-6 sm:mt-0 lg:text-center">
-                <h3 className="text-lg font-medium leading-6">Sponsors</h3>
-                <ul className="mt-4 space-y-4">
-                  {FOOTER.Sponsors.map((item) => {
-                    return (
-                      <li key={item.title} className="flex lg:justify-center">
-                        <span className="sr-only text-gray-500">{item.title}</span>
-                        {item.logo}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </section>
-            </div>
-          </section>
-        </section>
+    <footer className="bg-[#E7BAB5] px-20 py-16">
+      <div className="grid grid-cols-2 gap-14">
+        <div className="col-span-1 text-center">
+          <p className="text-4xl font-extrabold">GET IN TOUCH</p>
+          <p className="mt-4 text-xl text-[#505050] ">
+            Connect with developers from everywhere around the world. Make
+            strong relationship with other members , boost your network and
+            learn from each other.
+          </p>
+          <div className="flex gap-5">
+            <Link href={""}>
+              <Image src={contact} alt="contact" />
+            </Link>
+            <Link href={""}>
+              <Image src={lnkdin} alt="contact" />
+            </Link>
+            <Link href={""}>
+              <Image src={instgrm} alt="contact" />
+            </Link>
+            <Link href={""}>
+              <Image src={whtspp} alt="contact" />
+            </Link>
+          </div>
+        </div>
+        <div className="col-span-1 text-center">
+          <div className="flex items-center justify-center">
+            <Image src={logo} alt="logo" width="150" />
+          </div>
+          <p className="mt-4 text-2xl text-[#505050] ">
+            {`Bharati Vidyapeeth's College of Engineering A-4, Paschim Vihar, New
+            Delhi - 110063`}
+          </p>
+        </div>
       </div>
     </footer>
   );
