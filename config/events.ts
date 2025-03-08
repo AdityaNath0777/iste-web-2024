@@ -102,6 +102,21 @@ export const EVENTS: events = {
     ],
     tenure2023_2024: [
       {
+        name: "Session on Git & Open Source",
+        date: "3rd May, 2024",
+        description: [
+          "BVPISTE, in collaboration with JSLovers, organized a workshop on open source, Git, and GitHub. The session, led by Divyansh Gupta (Tech Architect, naukri.com), provided hands-on training in version control and best practices for collaborative software development.",
+          "Key takeaways include: Fundamentals of open source and community-driven development, Hands-on experience with Git & GitHub, Best practices for contributing to open source projects",
+          "The workshop saw 40 participants from various engineering disciplines, ranging from beginners to those with prior knowledge, fostering an engaging learning experience.",
+        ],
+        imageList: [
+          "/assets/events/2023_2024/Git_OpenSrc/Poster.jpg",
+          "/assets/events/2023_2024/Git_OpenSrc/01.jpg",
+          "/assets/events/2023_2024/Git_OpenSrc/02.jpg",
+          "/assets/events/2023_2024/Git_OpenSrc/03.jpg",
+        ],
+      },
+      {
         name: "Hack The Crisis 3.0",
         date: "13th-14th March, 2024",
         description: [
