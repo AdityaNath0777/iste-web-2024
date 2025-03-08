@@ -5,11 +5,14 @@ import { usePathname } from "next/navigation";
 import { Logo } from "./Logo";
 import { buttonVariants } from "@/components/Button";
 import { cn } from "@/lib/utils";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
+import { Divide } from "lucide-react";
 
 type MainNavProps = {
   items?: Navigation[];
   children?: React.ReactNode;
-}
+};
 const createNavigation = (items: Navigation[], currentPath: string) => {
   return items.map((item, index) => (
     <Link
@@ -26,27 +29,40 @@ const createNavigation = (items: Navigation[], currentPath: string) => {
 
 export function MainNav({ items }: MainNavProps) {
   const currentPath = usePathname();
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex justify-between w-full">
-      <div className="flex">
-      <Logo />
+    <div className="flex w-full justify-between">
+      <div className="md:flex">
+        <div
+          className="my-3 md:hidden"
+          onClick={() => {
+            setOpen(!open);
+            console.log(open);
+          }}
+        >
+          <GiHamburgerMenu />
+        </div>
 
-          <nav className="hidden gap-10 lg:flex">
-            {items && createNavigation(items, currentPath)}
-          </nav>
+          { open?<div></div>:""}
+
+        <Logo />
+
+        <nav className="hidden gap-10 md:flex md:px-10">
+          {items && createNavigation(items, currentPath)}
+        </nav>
       </div>
       <nav>
-            <Link
-              href="/"
-              className={cn(
-                buttonVariants(),
-                "border-solid border-2 border-border"
-              )}
-            >
-              Register Now
-            </Link>
-          </nav>
+        <Link
+          href="/"
+          className={cn(
+            buttonVariants(),
+            "mt-16 border-2 border-solid border-border md:mt-5",
+          )}
+        >
+          Register Now
+        </Link>
+      </nav>
     </div>
   );
 }

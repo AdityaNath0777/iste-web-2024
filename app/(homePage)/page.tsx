@@ -38,7 +38,7 @@ export default async function page() {
       <section className="isolate">
         <FAQ />
       </section>
-      <SignupForMeetupCard />
+      {/* <SignupForMeetupCard /> */}
     </>
   );
 }
