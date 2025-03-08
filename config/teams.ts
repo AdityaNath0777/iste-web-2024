@@ -366,7 +366,7 @@ export const TEAMS: TeamsTypes = {
     },
     {
       id: "2022008",
-      imageSrc: "/assets/teams/2024_2025/Yash.jpg",
+      imageSrc: "/assets/teams/2024_2025/Yash_bansal.jpg",
       name: "Yash Bansal",
       designation: "Elektronika Head",
       description:

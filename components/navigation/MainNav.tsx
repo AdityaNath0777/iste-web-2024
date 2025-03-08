@@ -38,7 +38,7 @@ export function MainNav({ items }: MainNavProps) {
       </div>
       <nav>
             <Link
-              href="/register"
+              href="/"
               className={cn(
                 buttonVariants(),
                 "border-solid border-2 border-border"

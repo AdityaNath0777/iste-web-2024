@@ -21,11 +21,11 @@ export default function Hero() {
           className="text-[#013D4D] text-lg"
           style={{ fontFamily: "Work Sans, sans-serif", color: "" }}
         >
-          Since its founding in 2011 at Bharati Vidyapeeth's College of
+          Since its founding in 2011 at Bharati Vidyapeeth&apos;s College of
           Engineering, the BVP ISTE Student Chapter has developed into a vibrant
           hub where creative innovation and technical brilliance thrive
-          together. As our campus's premier chapter of the Indian Society for
-          Technical Education, we've established an environment that uses
+          together. As our campus&apos;s premier chapter of the Indian Society for
+          Technical Education, we&apos;ve established an environment that uses
           hands-on education to turn ambitious students into professionals
           prepared for the workforce.
           <br />

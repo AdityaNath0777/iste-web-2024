@@ -1,9 +1,11 @@
 // TODO: all the sponsors svg needed to be changed to the svg with proper paths
 
+import Image from "next/image";
+
 export const Icons = {
   logo: () => (
     <div className="mx-4 w-20 h-20">
-    <img src="/assets/logo/bvpiste_extended.png" className="w-full h-full rounded-xl" loading="lazy" alt="BVP-ISTE" />
+    <Image src="/assets/logo/bvpiste_extended.png" width={50} height={50} className="w-full h-full rounded-xl" loading="lazy" alt="BVP-ISTE" />
     </div>
   ),
   razorpay: () => (
