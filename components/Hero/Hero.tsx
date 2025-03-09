@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col justify-center space-y-6 bg-[#feeedc] p-10 md:flex-row md:items-center md:space-y-0 md:p-12 lg:p-16">
+    <section className="flex-col justify-center space-y-6 bg-[#feeedc] p-10 md:flex-row md:items-center md:space-y-0 md:p-12 lg:flex lg:p-16">
       {/* Text Section */}
-      <div className="space-y-4 md:w-1/2">
+      <div className="space-y-4 lg:w-1/2">
         <h1
           className="text-5xl font-bold text-[#013D4D]"
           style={{ fontFamily: "Spicy Rice, cursive", color: "" }}
@@ -18,15 +18,15 @@ export default function Hero() {
           Indian Society for Technical Education
         </h2>
         <p
-          className="text-[#013D4D] text-lg"
+          className="text-justify text-lg text-[#013D4D]"
           style={{ fontFamily: "Work Sans, sans-serif", color: "" }}
         >
           Since its founding in 2011 at Bharati Vidyapeeth&apos;s College of
           Engineering, the BVP ISTE Student Chapter has developed into a vibrant
           hub where creative innovation and technical brilliance thrive
-          together. As our campus&apos;s premier chapter of the Indian Society for
-          Technical Education, we&apos;ve established an environment that uses
-          hands-on education to turn ambitious students into professionals
+          together. As our campus&apos;s premier chapter of the Indian Society
+          for Technical Education, we&apos;ve established an environment that
+          uses hands-on education to turn ambitious students into professionals
           prepared for the workforce.
           <br />
           <br />
@@ -42,7 +42,7 @@ export default function Hero() {
       </div>
 
       {/* Image Section with Double Frame Effect */}
-      <div className="flex justify-center md:w-1/2 md:justify-end">
+      <div className="mt-9 flex justify-center lg:w-1/2 lg:justify-end">
         <div className="relative p-4">
           {/* Outer Frame with rounded bottom-right corner */}
           <div className="absolute bottom-0 right-0 h-full w-full translate-x-2 translate-y-2 rounded-br-2xl border-b-8 border-r-8 border-[#013D4D]"></div>

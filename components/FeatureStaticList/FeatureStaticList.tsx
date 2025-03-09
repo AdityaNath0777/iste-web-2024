@@ -2,11 +2,11 @@ import { Achievement } from "@/types";
 import Image from "next/image";
 
 const FeatureStaticList = ({ cardData }: { cardData: Achievement[] }) => {
-  const createList = (cardData : Achievement[]) => {
+  const createList = (cardData: Achievement[]) => {
     return cardData.map((item: Achievement) => {
       return (
         <div key={item.title} className="flex flex-col">
-          <dt className="text-center  text-xl font-semibold xl:text-2xl">
+          <dt className="text-center  text-xl mb-4 font-semibold xl:text-2xl">
             {item.title}
           </dt>
           <dd className="flex flex-col items-center">
@@ -14,11 +14,11 @@ const FeatureStaticList = ({ cardData }: { cardData: Achievement[] }) => {
               <Image
                 src={item.imgSrc}
                 alt={item.title}
-                width={115}
-                height={115}
+                width={180}
+                height={180}
               />
             </div>
-            <p className="text-text-paragraph text-center text-sm lg:text-base">
+            <p className="text-text-paragraph text-center mt-4 text-sm lg:text-base">
               {item.description}
             </p>
           </dd>

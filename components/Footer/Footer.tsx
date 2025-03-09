@@ -2,57 +2,67 @@ import Link from "next/link";
 import { Icons } from "../Icons";
 import { FOOTER } from "@/config/footer";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import contact from "../../public/assets/contact.png";
+import instgrm from "../../public/assets/instgrm.png";
+import whtspp from "../../public/assets/whtspp.png";
+import lnkdin from "../../public/assets/lnkdin.png";
+import logo from "../../public/assets/logo/logo.png";
 
 export function Footer({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
-    <footer className={cn(className)}>
-      <h5 className="sr-only">Footer</h5>
-      <div className="container px-6 pt-2 sm:pt-8 lg:px-8 lg:pb-16">
-        <section className="lg:grid lg:grid-cols-3 lg:gap-8">
-          <section className="space-y-4">
-            <Icons.logo />
-            <p className="text-normal leading-6">
-              Community for developers by developers.
-            </p>
-          </section>
-          <section className="mt-6 grid grid-cols-1 gap-8 lg:col-span-2 lg:mt-0">
-            <div className="grid grid-cols-2 md:grid-cols-3 md:space-y-0">
-              <section className="lg:text-center">
-                <h3 className="text-lg font-medium leading-6">Quick Links</h3>
-                <ul className="mt-4 space-y-4">
-                  {FOOTER.QuickLinks.map((item) => (
-                    <li key={item.title}>
-                      <Link className="text-gray-500 hover:underline" href={"/"}>{item.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-              <section className="lg:text-center">
-                <h3 className="text-lg font-medium leading-6">Follow Us</h3>
-                <ul className="mt-4 space-y-4">
-                  {FOOTER.FollowUs.map((item) => (
-                    <li key={item.title}>
-                      <Link className="text-gray-500 hover:underline" href={"/"}>{item.title}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-              <section className="mt-6 sm:mt-0 lg:text-center">
-                <h3 className="text-lg font-medium leading-6">Sponsors</h3>
-                <ul className="mt-4 space-y-4">
-                  {FOOTER.Sponsors.map((item) => {
-                    return (
-                      <li key={item.title} className="flex lg:justify-center">
-                        <span className="sr-only text-gray-500">{item.title}</span>
-                        {item.logo}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </section>
-            </div>
-          </section>
-        </section>
+    <footer className="bg-[#E7BAB5] px-6 py-8 md:px-20 md:py-16">
+      <div className="md:grid md:grid-cols-2 md:gap-14">
+        <div className="col-span-1 text-center">
+          <p className="text-2xl font-extrabold md:text-4xl">GET IN TOUCH</p>
+          <p className="mt-4 text-[#505050] md:text-xl ">
+            Connect with developers from everywhere around the world. Make
+            strong relationship with other members , boost your network and
+            learn from each other.
+          </p>
+          <div className="mt-5 flex justify-center gap-5">
+            <Link
+              href={"https://linktr.ee/bvpiste"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={contact} alt="contact" />
+            </Link>
+            <Link
+              href={
+                "https://www.linkedin.com/in/bvp-iste-%F3%A0%80%A0-89529a218/"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={lnkdin} alt="contact" />
+            </Link>
+            <Link
+              href={"https://www.instagram.com/bvpiste/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={instgrm} alt="contact" />
+            </Link>
+            <Link
+              href={"https://chat.whatsapp.com/JfvP587K5goAaepcXk83rD"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={whtspp} alt="contact" />
+            </Link>
+          </div>
+        </div>
+
+        <div className="col-span-1 mt-8 text-center md:mt-0">
+          <div className="flex items-center justify-center">
+            <Image src={logo} alt="logo" width="150" />
+          </div>
+          <p className="mt-4 text-[#505050] md:text-2xl ">
+            {`Bharati Vidyapeeth's College of Engineering A-4, Paschim Vihar, New
+            Delhi - 110063`}
+          </p>
+        </div>
       </div>
     </footer>
   );
