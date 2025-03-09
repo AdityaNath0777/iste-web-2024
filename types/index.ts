@@ -16,11 +16,11 @@ export interface Talk extends Achievement {
 };
 
 export interface Workshop {
-  speakerImageSrc: StaticImageData;
+  ImageSrcs: StaticImageData[];
   speakerName: string;
   speakerRole: string;
   workshopTitle: string;
-  workshopDescription: string;
+  workshopDescription: string[];
   workshopDate: string;
 }
 
