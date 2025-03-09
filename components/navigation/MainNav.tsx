@@ -52,7 +52,7 @@ export function MainNav({ items }: MainNavProps) {
           </nav>
         </div>
 
-        <nav>
+        {/* <nav>
           <Link
             href="/"
             className={cn(
@@ -62,10 +62,10 @@ export function MainNav({ items }: MainNavProps) {
           >
             Register Now
           </Link>
-        </nav>
+        </nav> */}
       </div>
       {open ? (
-        <div className=" absolute left-0 top-0 z-10 h-2/5 w-screen rounded-b-2xl bg-[#E7BAB5] px-2 py-1 md:hidden">
+        <div className=" absolute left-0 top-0 z-10 h-2/5 max-w-[15rem] w-screen rounded-b-2xl bg-[#E7BAB5] px-2 py-1 md:hidden">
           <div className="flex justify-end">
             <HiMiniXMark
               className="text-end text-xl"
