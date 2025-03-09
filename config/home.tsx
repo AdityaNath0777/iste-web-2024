@@ -1,30 +1,31 @@
 import { Home } from "@/types";
-import speakerImage from "public/assets/hero_image_guest_v1.png";
+import team2023_2024Image from "public/assets/teams/2023_2024/teamPic.jpg";
+import htc3GroupImage from "public/assets/events/2023_2024/HTC_3.0/05.jpg";
 
 export const HOMEPAGE: Home = {
   Achievements: [
     {
-      title: "Hands-On Experience",
+      title: "10,000+ Members",
       description:
-        "Participate in practical projects to obtain practical experience in your area of interest.",
+        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
       imgSrc: "/assets/achievement_1_v1.png",
     },
     {
-      title: "Professional Connections",
+      title: "100+ Workshops",
       description:
-        " Get in touch with alumni and industry professionals who can provide opportunities and advice..",
+        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
       imgSrc: "/assets/achievement_2_v1.png",
     },
     {
-      title: "Develop Yourself",
+      title: "100+ Sponsers",
       description:
-        "Develop your technical and soft skills through workshops and sessions to prepare you for the workforce.",
+        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
       imgSrc: "/assets/achievement_3_v1.png",
     },
     {
-      title: "Create Fun Memories",
+      title: "100+ Speakers",
       description:
-        "Take pleasure in social gatherings, connect with like-minded people, and form friendships that will last a lifetime.",
+        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
       imgSrc: "/assets/achievement_4_v1.png",
     },
   ],
@@ -35,7 +36,7 @@ export const HOMEPAGE: Home = {
       imgSrc: "/assets/subchapters/pixelkraft.png",
       speaker: "Arun Singh",
       description:
-        "PixelCraft serves as your creative blank canvas. For those interested in graphic design who wish to experiment and develop in the field of visuals. ",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis earum nihil sapiente?",
     },
     {
       date: "01 June 2022",
@@ -43,7 +44,7 @@ export const HOMEPAGE: Home = {
       imgSrc: "/assets/subchapters/electronika.png",
       speaker: "Arun Sharma",
       description:
-        "The center of electronic innovation is Electronika. Fans of robotics, circuits, and innovation will love this section.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis earum nihil sapiente?",
     },
     {
       date: "14 Jan 2024",
@@ -51,7 +52,7 @@ export const HOMEPAGE: Home = {
       imgSrc: "/assets/subchapters/softech.png",
       speaker: "Prateek",
       description:
-        "Softech bridges innovation and technology, empowering students to transform creative ideas into real-world solutions by exploring the evolving tech landscape.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis earum nihil sapiente?",
     },
     {
       date: "20 May 2021",
@@ -59,7 +60,7 @@ export const HOMEPAGE: Home = {
       imgSrc: "/assets/subchapters/EM.png",
       speaker: "Ekaspreet Singh",
       description:
-        "The backbone of our success lies in our dedicated event management team, a dynamic force that transforms ideas into impactful experiences.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis earum nihil sapiente?",
     },
     {
       date: "20 May 2021",
@@ -67,7 +68,7 @@ export const HOMEPAGE: Home = {
       imgSrc: "/assets/subchapters/Content.png",
       speaker: "Vrukshali",
       description:
-        "TThe content team boosts our digital presence through creative storytelling and strategic marketing, showcasing achievements and engaging the community.",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis earum nihil sapiente?",
     },
     {
       date: "20 May 2021",
@@ -75,16 +76,17 @@ export const HOMEPAGE: Home = {
       imgSrc: "/assets/subchapters/sahitya.png",
       speaker: "Neha Sharma",
       description:
-        "Sahitya is for people who appreciate the craft of language. Literary endeavors and content writing are the focus of this subchapter",
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis earum nihil sapiente?",
     },
   ],
   Workshop: {
-    speakerImageSrc: speakerImage,
+    ImageSrcs: [team2023_2024Image, htc3GroupImage],
     speakerName: "Chulbul Pandey",
     speakerRole: "Frontend Architect at Apple",
     workshopTitle: "Introduction to Design System and Storybook",
     workshopDate: " On 24th October at 05:00 AM IST",
-    workshopDescription:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    workshopDescription: [
+      "Founded in 2011, the BVP ISTE Student Chapter at Bharati Vidyapeeth's College of Engineering is a thriving hub for innovation and technical excellence. With 300+ active members, we offer leadership, professional growth, and hands-on learning opportunities in fields like web development, graphic design, machine learning, and AI. Through impactful seminars and workshops, we bridge the gap between academics and real-world applications, preparing students for a successful future.",
+    ],
   },
 };
