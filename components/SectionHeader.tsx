@@ -20,7 +20,7 @@ const SectionHeader = ({
     <section className={cn("flex flex-col gap-1 lg:gap-4", className)}>
       <h3
         className={cn(
-          "text-text-sub-heading text-2xl font-semibold lg:text-[40px]",
+          "text-text-sub-heading text-2xl/10 font-semibold lg:text-[40px]",
           titleClassName,
         )}
       >

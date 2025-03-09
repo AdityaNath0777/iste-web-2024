@@ -16,6 +16,15 @@ export interface Talk extends Achievement {
 };
 
 export interface Workshop {
+  speakerImageSrc: StaticImageData;
+  speakerName: string;
+  speakerRole: string;
+  workshopTitle: string;
+  workshopDescription: string;
+  workshopDate: string;
+}
+
+export interface HeroCarousel {
   ImageSrcs: StaticImageData[];
   speakerName: string;
   speakerRole: string;
@@ -27,7 +36,7 @@ export interface Workshop {
 export interface Home {
   Achievements: Achievement[];
   PreviousTalks: Talk[];
-  Workshop: Workshop;
+  HeroCarousel: HeroCarousel;
 }
 
 export interface Speaker {

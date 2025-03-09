@@ -1,10 +1,10 @@
-import { Workshop } from "@/types";
+import { HeroCarousel } from "@/types";
 import Image from "next/image";
 import { CarouselSection } from "../CarouselSection";
 import { CarouselItem } from "../ui/carousel";
 import { ImageDoubleFrame } from "../ImageDoubleFrame";
 
-export default function Hero({ data }: { data: Workshop }) {
+export default function Hero({ data }: { data: HeroCarousel }) {
   return (
     <section className="flex flex-col justify-center space-y-6 bg-[#feeedc] p-10 md:flex-row md:items-center md:gap-4 md:space-y-0 md:p-12 lg:p-16">
       {/* Text Section */}
