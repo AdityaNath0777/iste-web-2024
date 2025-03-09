@@ -24,10 +24,19 @@ export interface Workshop {
   workshopDate: string;
 }
 
+export interface HeroCarousel {
+  ImageSrcs: StaticImageData[];
+  speakerName: string;
+  speakerRole: string;
+  workshopTitle: string;
+  workshopDescription: string[];
+  workshopDate: string;
+}
+
 export interface Home {
   Achievements: Achievement[];
   PreviousTalks: Talk[];
-  Workshop: Workshop;
+  HeroCarousel: HeroCarousel;
 }
 
 export interface Speaker {

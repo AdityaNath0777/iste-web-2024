@@ -1,5 +1,7 @@
 import { Home } from "@/types";
-import speakerImage from "public/assets/hero_image_guest_v1.png";
+import team2024_2025Image from "public/assets/teams/2024_2025/teamPic.jpg";
+import team2023_2024Image from "public/assets/teams/2023_2024/teamPic.jpg";
+import htc3GroupImage from "public/assets/events/2023_2024/HTC_3.0/05.jpg";
 
 export const HOMEPAGE: Home = {
   Achievements: [
@@ -78,13 +80,14 @@ export const HOMEPAGE: Home = {
         "Sahitya is for people who appreciate the craft of language. Literary endeavors and content writing are the focus of this subchapter",
     },
   ],
-  Workshop: {
-    speakerImageSrc: speakerImage,
+  HeroCarousel: {
+    ImageSrcs: [team2024_2025Image, team2023_2024Image, htc3GroupImage],
     speakerName: "Chulbul Pandey",
     speakerRole: "Frontend Architect at Apple",
     workshopTitle: "Introduction to Design System and Storybook",
     workshopDate: " On 24th October at 05:00 AM IST",
-    workshopDescription:
-      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    workshopDescription: [
+      "Founded in 2011, the BVP ISTE Student Chapter at Bharati Vidyapeeth's College of Engineering is a thriving hub for innovation and technical excellence. With 300+ active members, we offer leadership, professional growth, and hands-on learning opportunities in fields like web development, graphic design, machine learning, and AI. Through impactful seminars and workshops, we bridge the gap between academics and real-world applications, preparing students for a successful future.",
+    ],
   },
 };
